@@ -1,6 +1,6 @@
 ## Hi there 👋
 😊I am Uzma.
-🌱 I'm currently learning differnet Python and C and working on mini projects....
+🌱 I'm currently learning Python and C and working on mini projects....
 
 <!--
 **uzman2406** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
