@@ -1,136 +1,62 @@
-def pt(a,b,c,d,e,f,g,h,i):
-    print(a," | ",b," | ",c)
-    print("----------------")
-    print(d," | ",e," | ",f)
-    print("----------------")
-    print(g," | ",h," | ",i)
-a="a"
-b="b"
-c="c"
-d="d"
-e="e"
-f="f"
-g="g"
-h="h"
-i="i"
-pt(a,b,c,d,e,f,g,h,i)
-q=None
-t="X"
-l=[]
-l2=["a","b","c","d","e","f","g","h","i"]
-print("game will start with X")
-z=1
-while (z<=9):
-    #GAME WILL START WITH X#
-    print("X's turn")
-    if t=="X" and z<=9:
-        x=input("enter block name;") 
-        if x in l:
-            print("NO CHEATING")
-            t="X"
-            continue
-        elif x not in l2:
-           print ("enter valid place")
-           t="X"
-           continue
-        else:
-            if x=="a":
-               a=t
-               l.append("a")
-               t="O"
-            elif x=="b":
-               b=t
-               l.append("b")
-               t="O"
-            elif x=="c":
-              c=t
-              l.append("c")
-              t="O"            
-            elif x=="d":
-               d=t
-               l.append("d")
-               t="O"
-            elif x=="e":
-              e=t
-              l.append("e")
-              t="O"
-            elif x=="f":
-              f=t
-              l.append("f")
-              t="O"
-            elif x=="g":
-              g=t
-              l.append("g")
-              t="O"
-            elif x=="h":
-              h=t
-              l.append("h")
-              t="O"
-            elif x=="i":
-              i=t
-              l.append("i")
-              t="O"
-            pt(a,b,c,d,e,f,g,h,i)
-            q=[a==b==c,d==e==f,g==h==i,a==d==g,b==e==h,c==f==i,a==e==i,c==e==g]
-            z+=1
-            if True in q:
-              print ("X is winner")
-              break
+def print_board(board):
+    """Prints the Tic Tac Toe board in a nice format."""
+    print()
+    for i in range(3):
+        print(f" {board[i*3]} | {board[i*3+1]} | {board[i*3+2]} ")
+        if i < 2:
+            print("---+---+---")
+    print()
+
+
+def check_winner(board, player):
+    """Checks if the given player has won."""
+    win_combinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Columns
+        [0, 4, 8], [2, 4, 6]              # Diagonals
+    ]
+    return any(all(board[pos] == player for pos in combo) for combo in win_combinations)
+
+
+def tic_tac_toe():
+    board = ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+    taken = []
+    current_player = "X"
+
+    print("🎮 Welcome to Tic Tac Toe!")
+    print("Game starts with X")
+    print_board(board)
+
+    for turn in range(9):
+        while True:
+            move = input(f"{current_player}'s turn. Choose a block (a-i): ").lower()
+
+            if move not in board:
+                print("❌ Invalid input! Choose from a to i.")
+            elif move in taken:
+                print("⚠️ That spot is already taken!")
             else:
-               print("Os turn")
-    if t=="O" and z<9:
-        x=input("enter block name;")
-        if x in l:
-            print("NO CHEATING")
-            t="O"
-            continue
-        elif x not in l2:
-           print("Enter valid place")
-           t="O"
-           continue
-        else:
-            if x=="a":
-               a=t
-               l.append("a")
-               t="X"
-            elif x=="b":
-               b=t
-               l.append("b")
-               t="X"
-            elif x=="c":
-              c=t
-              l.append("c") 
-              t="X"             
-            elif x=="d":
-               d=t
-               l.append("d")
-               t="X"
-            elif x=="e":
-              e=t
-              l.append("e")
-              t="X"
-            elif x=="f":
-              f=t
-              l.append("f")
-              t="X"
-            elif x=="g":
-              g=t
-              l.append("g")
-              t="X"
-            elif x=="h":
-              h=t
-              l.append("h")
-              t="X"
-            elif x=="i":
-              i=t
-              l.append("i")
-              t="X"
-            pt(a,b,c,d,e,f,g,h,i)
-            q=[a==b==c,d==e==f,g==h==i,a==d==g,b==e==h,c==f==i,a==e==i,c==e==g]
-            z+=1
-            t="X"
-            if True in q:
-              print ("X is winner")
-              break
-else:
-    print("Noone is winner")
+                break
+
+        index = board.index(move)
+        board[index] = current_player
+        taken.append(move)
+
+        print_board(board)
+
+        if check_winner(board, current_player):
+            print(f"🎉 {current_player} wins!")
+            break
+
+        current_player = "O" if current_player == "X" else "X"
+    else:
+        print("🤝 It's a draw!")
+
+    # Option to play again
+    again = input("Play again? (y/n): ").lower()
+    if again == "y":
+        tic_tac_toe()
+
+
+# Start the game
+tic_tac_toe()
