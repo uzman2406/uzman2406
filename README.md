@@ -26,6 +26,9 @@ I believe that **good software explains itself** — and great software teaches 
 - Java(beginner)   
 - HTML • CSS  
 - TypeScript (in progress)
+- Tailwind
+- React
+  
 
 ### ⚙️ Tools & Frameworks  
 - Git & GitHub  
