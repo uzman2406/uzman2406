@@ -74,10 +74,6 @@ I believe:
 ## 📊 GitHub Stats
 
 <p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=uzman2406&show_icons=true&theme=tokyonight" />
-</p>
-
-<p align="center">
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=uzman2406&theme=tokyonight" />
 </p>
 
