@@ -2,7 +2,7 @@
 <h3 align="center">Building clarity from complexity • Learning by creating • Growing in tech 🚀</h3>
 
 ---
-
+Glad to see you here:) <img src="https://komarev.com/ghpvc/?username=uzman2406&color=gray&style=flat-square" alt="uzman2406" />
 ## 🌟 About Me
 
 🎓 Computer Science student  
