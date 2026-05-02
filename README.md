@@ -1,15 +1,15 @@
 <h1 align="center">Hi 👋, I'm Uzma Nayab</h1>
-<h3 align="center">Building clarity from complexity • Learning by creating • Growing in tech 🚀</h3>
+<h3 align="center">Building clarity from complexity • Learning by creating • Growing in tech </h3>
 
 ---
 Glad to see you here! <img src="https://komarev.com/ghpvc/?username=uzman2406&color=blue&style=plastic" alt="uzman2406" align="center" />
-## 🌟 About Me
+##  About Me
 
-🎓 Computer Science student  
-🤖 Aspiring AI/ML Engineer  
-💡 Passionate about turning complex ideas into simple visual solutions  
-🌱 Currently learning Data Structures, AI & ML  
-📈 Growing consistently, one commit at a time  
+ Computer Science student  
+ Aspiring AI/ML Engineer  
+ Passionate about turning complex ideas into simple visual solutions  
+ Currently learning Data Structures, AI & ML  
+ Growing consistently, one commit at a time  
 
 I believe:
 > Open source is not just about code — it’s about community, clarity, and contribution.
@@ -32,9 +32,9 @@ I believe:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
-### 💻 Languages
+###  Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-3776AB?style=for-the-badge&logo=c++&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
@@ -74,7 +74,8 @@ I believe:
 ## 📊 GitHub Stats
 
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=uzman2406&theme=tokyonight" />
+<img src="https://github-readme-stats.shion.dev/api?username=uzman2406&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github" height="141" />&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=uzman2406&theme=tokyonight" height="140" />
+
 </p>
 
 ---
