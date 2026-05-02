@@ -81,7 +81,7 @@ I believe:
 
 ## 📈 Contribution Graph
 
-[![Uzma's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=uzman2406&theme=tokyo-night)](https://github.com/uzman2406)
+[![My github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=uzman2406&theme=tokyo-night)](https://github.com/uzman2406)
 
 ---
 
