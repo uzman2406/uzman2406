@@ -74,7 +74,7 @@ I believe:
 ## 📊 GitHub Stats
 
 <p align="center">
-<img src="https://github-readme-stats.shion.dev/api?username=uzman2406&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github" height="141" />&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=uzman2406&theme=tokyonight" height="140" />
+<img src="https://github-readme-stats.shion.dev/api?username=uzman2406&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&show_icons=true&rank_icon=github" height="141" />&nbsp;<img src="https://github-readme-stats.tuhidulhossain.com/api/streak?username=uzman2406&theme=tokyonight" height="141" />
 
 </p>
 
